@@ -17,7 +17,9 @@
   width: 100vw;
   height: 100vh;
   position: relative;
-  background-color: pink;
+  background-color: lightskyblue;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0px 0px 40px rgba(0, 0, 0, 0.1) inset;
+
 }
 .wrapper .swiper{
   width: 100vw;
@@ -32,8 +34,7 @@
 
 .wrapper .des{
   margin: 0;
-  padding-top: 100rpx;
+  padding-top: 50rpx;
   width: 100vw;
   height: 25vh;
-  border: 1px solid black;
 }

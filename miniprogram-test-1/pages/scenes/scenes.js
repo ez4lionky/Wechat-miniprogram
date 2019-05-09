@@ -7,19 +7,19 @@ Page({
   data: {
     imgUrls: [
       {
-        address: "../../images/paris.png",
+        address: "https://raw.githubusercontent.com/ez4lionky/Wechat-miniprogram/master/miniprogram-test-1/images/paris.png",
         description: "Select scene Paris"
       },
       {
-        address: '../../images/tengwang.png',
+        address: 'https://raw.githubusercontent.com/ez4lionky/Wechat-miniprogram/master/miniprogram-test-1/images/tengwang.png',
         description: "Select scene TengWang pavilion"
       },
       {
-        address: '../../images/whitehouse.jpg',
+        address: 'https://raw.githubusercontent.com/ez4lionky/Wechat-miniprogram/master/miniprogram-test-1/images/whitehouse.jpg',
         description: "Select scene White House"
       },
       {
-        address: '../../images/palace.jpg',
+        address: 'https://raw.githubusercontent.com/ez4lionky/Wechat-miniprogram/master/miniprogram-test-1/images/palace.jpg',
         description: "Select scene Palace"
       }
     ],
