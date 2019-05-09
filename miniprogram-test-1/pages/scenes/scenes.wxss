@@ -1,0 +1,39 @@
+/* fonts.wxss */
+@import "fonts.wxss";
+.iconfont {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+/* pages/scenes/scenes.wxss */
+.wrapper{
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: pink;
+}
+.wrapper .swiper{
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+.wrapper .swiper-item,
+.wrapper image{
+  width: 100vw;
+  height: 75vh;
+}
+
+.wrapper .des{
+  margin: 0;
+  padding-top: 100rpx;
+  width: 100vw;
+  height: 25vh;
+  border: 1px solid black;
+}
