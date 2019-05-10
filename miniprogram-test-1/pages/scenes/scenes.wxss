@@ -1,12 +1,14 @@
-/* fonts.wxss */
-@import "fonts.wxss";
+/* icon fonts */
+@import "../style/iconfonts.wxss";
+
 .iconfont {
-  width: 1em;
-  height: 1em;
-  vertical-align: -0.15em;
-  fill: currentColor;
-  overflow: hidden;
+  font-family: "iconfont" !important;
+  font-size: 32px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
 /* pages/scenes/scenes.wxss */
 .wrapper{
   width: 100vw;
@@ -18,8 +20,7 @@
   height: 100vh;
   position: relative;
   background-color: lightskyblue;
-  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0px 0px 40px rgba(0, 0, 0, 0.1) inset;
-
+  box-shadow:0 10px 10px rgba(0, 0, 0, 0.3), 0px 0px 40px rgba(0, 0, 0, 0.3) inset;
 }
 .wrapper .swiper{
   width: 100vw;
@@ -29,7 +30,7 @@
 .wrapper .swiper-item,
 .wrapper image{
   width: 100vw;
-  height: 75vh;
+  height: 70vh;
 }
 
 .wrapper .des{
@@ -37,4 +38,14 @@
   padding-top: 50rpx;
   width: 100vw;
   height: 25vh;
+}
+.wrapper .des image{
+  display: block;
+  width: 50%;
+  height: 100rpx;
+  background-color: #fff;
+}
+.wrapper .des .button{
+  margin-top: 50rpx;
+  text-align: center;
 }

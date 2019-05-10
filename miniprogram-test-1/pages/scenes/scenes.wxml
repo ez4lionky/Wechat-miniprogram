@@ -3,7 +3,7 @@
     class='swiper' 
     indicator-dots="true"
     autoplay="false"
-    interval="5000"
+    interval="8000"
     duration="1000"
     circular='true'
   >
@@ -12,6 +12,7 @@
         <image src="{{item.address}}" class="slide-image"/>
         <view class='des'>
           {{item.description}}
+          <view class='button iconfont icon-gouxuan' bindtap="jumpToCheck" id="{{index}}"></view>
         </view>
       </swiper-item>
     </block>

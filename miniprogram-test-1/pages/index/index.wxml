@@ -1,5 +1,5 @@
 <view class="container">
-  <image src="https://github.com/ez4lionky/Wechat-miniprogram/blob/master/miniprogram-test-1/images/illusion.jpg"></image>
+  <image src="https://raw.githubusercontent.com/ez4lionky/Wechat-miniprogram/master/miniprogram-test-1/images/illusion.jpg"></image>
   <view class="button-wrapper" bindtap='go'>
     <text class='button-text'>开始录制</text>
   </view>

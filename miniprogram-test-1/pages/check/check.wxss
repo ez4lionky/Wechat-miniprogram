@@ -1,0 +1,31 @@
+/* iconfont wxss */
+@import "../style/iconfonts.wxss";
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 64px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* pages/check/check.wxss */
+.wrapper image{
+  width: 100%;
+  height: 70vh;
+}
+
+.bottom{
+  margin: 0 100rpx;
+  padding-top: 100rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.check{
+  color: lightskyblue;
+}
+
+.cancel{
+  color: red;
+}

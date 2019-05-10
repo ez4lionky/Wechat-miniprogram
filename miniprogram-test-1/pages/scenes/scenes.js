@@ -24,6 +24,13 @@ Page({
       }
     ],
   },
+  
+  jumpToCheck: function (e) {
+    var scene = e.currentTarget.id;
+    wx.navigateTo({
+      url: '../check' + '/check' + '?scene=' + scene
+    });
+  },
   /**
    * 生命周期函数--监听页面加载
    */
