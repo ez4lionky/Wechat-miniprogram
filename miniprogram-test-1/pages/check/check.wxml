@@ -1,6 +1,6 @@
 <!--pages/check/check.wxml-->
 <view class="wrapper">
-  <image   src="https://raw.githubusercontent.com/ez4lionky/Wechat-miniprogram/master/miniprogram-test-1/images/illusion.jpg"></image>
+  <image   src="https://raw.githubusercontent.com/ez4lionky/Wechat-miniprogram/master/images/illusion.jpg"></image>
 
   <view class='bottom'>
     <view class='button iconfont icon-huabanfuben check' bindtap="jumpToPay"></view>
