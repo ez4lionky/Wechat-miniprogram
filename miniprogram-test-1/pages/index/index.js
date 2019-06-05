@@ -83,7 +83,7 @@ Page({
         if (res.code) {
           //发起网络请求
           wx.request({
-            url: 'http://' + that.data.local_ip,
+            url: 'http://' + that.data.local_url,
             method: "POST",
             success: function (res) {
               that.setData({
@@ -109,6 +109,7 @@ Page({
   },
 
   go:function(){
+    this.logIn();
     wx.redirectTo({
       url: '../scenes/scenes',
     })
