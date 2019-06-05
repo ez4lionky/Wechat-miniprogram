@@ -7,6 +7,7 @@ Page({
     bssid: '', //Wi-Fi 的BSSID
     password: 'conglinfenggo', //Wi-Fi 的密码
     connet: true,
+    local_url: '192.168.0.111:8080',
   },
 
   connectWifi: function () {
@@ -67,17 +68,44 @@ Page({
       fail: function (res) {
         wx.showToast({
           title: '请检查是否打开wifi',
+          icon: 'none',
         });
         console.log(res.errMsg);
         return false;
       }
     });
   },
+  logIn: function (){
+    var that = this;
+    wx.login({
+      success: function (res) {
+        console.log("res.code=====" + res.code);
+        if (res.code) {
+          //发起网络请求
+          wx.request({
+            url: 'http://' + that.data.local_ip,
+            method: "POST",
+            success: function (res) {
+              that.setData({
+                openid: res.data.openid
+              })
+            },
+            fail(res) {
+              console.log(res.errMsg);
+            },
+          })
+        } else {
+          console.log('获取用户登录态失败！' + res.errMsg)
+        }
+      }
+    })
+  },
   onLoad() {
     this.setData({
       ctx: wx.createCameraContext()
     });
     this.connectWifi();
+    this.logIn();
   },
 
   go:function(){
